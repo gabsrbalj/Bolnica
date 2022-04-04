@@ -28,17 +28,17 @@ namespace Hospital.Repository
                     while (await reader.ReadAsync())
                     {
 
-                        DoctorModel docmod = new DoctorModel();
-                        docmod.DoctorID = reader.GetGuid(0);
-                        docmod.FirstName = reader.GetString(1);
-                        docmod.LastName = reader.GetString(2);
-                        docmod.TelephoneNumber = reader.GetString(3);
-                        docmod.Email = reader.GetString(4);
-                        docmod.DoctorPassword = reader.GetString(5);
-                        docmod.CreatedAt = reader.GetDateTime(6);
-                        docmod.DepartmentID = reader.GetGuid(7);
+                        DoctorModel doctorModel = new DoctorModel();
+                        doctorModel.DoctorID = reader.GetGuid(0);
+                        doctorModel.FirstName = reader.GetString(1);
+                        doctorModel.LastName = reader.GetString(2);
+                        doctorModel.TelephoneNumber = reader.GetString(3);
+                        doctorModel.Email = reader.GetString(4);
+                        doctorModel.DoctorPassword = reader.GetString(5);
+                        doctorModel.CreatedAt = reader.GetDateTime(6);
+                        doctorModel.DepartmentID = reader.GetGuid(7);
 
-                        doctor.Add(docmod);
+                        doctor.Add(doctorModel);
                
                     }
 

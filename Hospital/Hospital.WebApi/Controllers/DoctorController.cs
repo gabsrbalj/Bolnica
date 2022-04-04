@@ -17,7 +17,7 @@ namespace Hospital.WebApi.Controllers
         static List<DoctorModel> doctor = new List<DoctorModel>();
 
         [HttpGet]
-        [Route("api/values/getall")]
+        [Route("api/GetAllDoctors")]
        
         public async Task<HttpResponseMessage> GetDoctors()
         {

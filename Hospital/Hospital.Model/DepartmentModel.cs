@@ -19,5 +19,8 @@ namespace Hospital.Model
         public Guid HospitalID { get; set; }
 
         public string Specialization { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public DateTime DeletedAt  { get; set; }
     }
 }

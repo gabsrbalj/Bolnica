@@ -16,7 +16,7 @@ namespace Hospital.WebApi.Controllers
         static List<PatientModel> patient = new List<PatientModel>();
 
         [HttpGet]
-        [Route("api/values/getallpatients")]
+        [Route("api/ShowAllPatients")]
         public async Task<HttpResponseMessage> GetAllPatients()
         {
             PatientService service = new PatientService();

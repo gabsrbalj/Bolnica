@@ -12,8 +12,8 @@ namespace Hospital.Service
     {
         public async Task<List<DoctorModel>> GetDoctors()
         {
-            DoctorRepository docrepo = new DoctorRepository();
-            return await docrepo.GetDoctors();
+            DoctorRepository doctorRepository = new DoctorRepository();
+            return await doctorRepository.GetDoctors();
         }
     }
 }

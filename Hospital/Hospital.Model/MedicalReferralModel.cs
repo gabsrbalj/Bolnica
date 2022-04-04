@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hospital.Model
 {
-    public class MedicalRefModel
+    public class MedicalReferralModel
     {
-        public Guid MedicalRefID { get; set; }
+        public Guid MedicalReferralID { get; set; }
         public Guid AnamnesisID { get; set; }
         public string Diagnosis { get; set; }
         public string Department { get; set; }

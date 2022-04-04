@@ -46,7 +46,7 @@
     <Compile Include="DepartmentModel.cs" />
     <Compile Include="HospitalModel.cs" />
     <Compile Include="DoctorModel.cs" />
-    <Compile Include="MedicalRefModel.cs" />
+    <Compile Include="MedicalReferralModel.cs" />
     <Compile Include="PatientModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

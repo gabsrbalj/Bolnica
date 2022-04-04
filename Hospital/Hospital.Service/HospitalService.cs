@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace Hospital.Service
 {
-    public class PatientService
+    public class HospitalService
     {
-        public async Task<List<PatientModel>> GetAllPatients()
+        public async Task<List<HospitalModel>> ShowHospital()
         {
 
-            PatientRepository patrepo = new PatientRepository();
-            return await patrepo.GetAllPatients();
+            HospitalRepository hospitalRepository = new HospitalRepository();
+            return await hospitalRepository.ShowHospital();
 
         }
     }
