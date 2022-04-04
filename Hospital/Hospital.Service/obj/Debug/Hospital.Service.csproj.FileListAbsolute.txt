@@ -1,0 +1,11 @@
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\bin\Debug\Hospital.Service.dll
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\bin\Debug\Hospital.Service.pdb
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\bin\Debug\Hospital.Model.dll
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\bin\Debug\Hospital.Repository.dll
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\bin\Debug\Hospital.Model.pdb
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\bin\Debug\Hospital.Repository.pdb
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\obj\Debug\Hospital.Service.csprojAssemblyReference.cache
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\obj\Debug\Hospital.Service.csproj.CoreCompileInputs.cache
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\obj\Debug\Hospital.Service.csproj.CopyComplete
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\obj\Debug\Hospital.Service.dll
+C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Service\obj\Debug\Hospital.Service.pdb
