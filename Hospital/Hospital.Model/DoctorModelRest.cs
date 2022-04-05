@@ -8,16 +8,16 @@ namespace Hospital.Model
 {
     public class DoctorModelRest
     {
-        public Guid DoctorID { get; set; }
+        public Guid doctorID { get; set; }
 
-        public string FirstName { get; set; }
+        public string firstName { get; set; }
 
-        public string LastName { get; set; }
+        public string lastName { get; set; }
 
-        public string TelephoneNumber { get; set; }
+        public string telephoneNumber { get; set; }
 
-        public string Email { get; set; }
+        public string email { get; set; }
 
-        public Guid DepartmentID { get; set; }
+        public Guid departmentID { get; set; }
     }
 }
