@@ -8,19 +8,19 @@ namespace Hospital.Model
 {
     public class DepartmentModel
     {
-        public Guid DepartmentID { get; set; }
+        public Guid departmentID { get; set; }
 
-        public string DepartmentName { get; set; }
+        public string departmentName { get; set; }
 
-        public int HospitalFloor { get; set; }
+        public int hospitalFloor { get; set; }
 
-        public string TelephoneNumber { get; set; }
+        public string telephoneNumber { get; set; }
 
-        public Guid HospitalID { get; set; }
+        public Guid hospitalID { get; set; }
 
-        public string Specialization { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public DateTime DeletedAt  { get; set; }
+        public string specialization { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime updatedAt { get; set; }
+        public DateTime deletedAt  { get; set; }
     }
 }

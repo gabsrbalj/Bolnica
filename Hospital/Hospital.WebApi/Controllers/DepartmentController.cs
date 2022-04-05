@@ -16,11 +16,11 @@ namespace Hospital.WebApi.Controllers
 
         [HttpGet]
         [Route("api/Departments")]
-        public async Task<HttpResponseMessage> GetAllDepartments()
+        public async Task<HttpResponseMessage> GetAllDepartmentsAsync()
         {
             DepartmentService service = new DepartmentService();
 
-            department = await service.GetAllDepartments();
+            department = await service.GetAllDepartmentsAsync();
 
             if (department != null)
             {
@@ -33,5 +33,29 @@ namespace Hospital.WebApi.Controllers
             }
 
         }
+
+
+
+        [HttpGet]
+        [Route("api/Departmentsid")]
+        public async Task<HttpResponseMessage> GetDepartmentAsync(int id)
+        {
+            DepartmentService service = new DepartmentService();
+
+            department = await service.GetDepartmentAsync(id);
+
+            if (department != null)
+            {
+
+                return Request.CreateResponse(HttpStatusCode.OK, department);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Department Not Found");
+            }
+
+        }
+
+
     }
 }
