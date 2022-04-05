@@ -82,7 +82,7 @@ namespace Hospital.WebApi.Controllers
 
         }
 
-        // PUT: api/Patient/5
+        [Route("api/updatePatient")]
         public async Task<HttpResponseMessage> PutAsync(int id, PatientModel patient)
         {
 
@@ -115,9 +115,31 @@ namespace Hospital.WebApi.Controllers
         }
 
 
-        // DELETE: api/Patient/5
-        public void Delete(int id)
+        [Route("api/deletePatient")]
+        public async Task<HttpResponseMessage> DeleteAsync(int id, PatientModel patient)
         {
+
+            PatientService service = new PatientService();
+            PatientModel delete = new PatientModel();
+
+            delete = await service.UpdatePatientAsync(id, patient);
+
+            if (delete != null)
+            {
+        
+                return Request.CreateResponse(HttpStatusCode.OK, "From now, this patient is inactive in database.");
+            }
+
+
+
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Patient does not exist in database.");
+            }
+
         }
+
+
+
     }
 }

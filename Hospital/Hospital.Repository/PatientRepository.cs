@@ -158,6 +158,42 @@ namespace Hospital.Repository
 
 
 
+        public async Task<PatientModel> DeletePatientAsync(int id, PatientModel patient)
+        {
+            //string connectionString = "Data Source=DESKTOP-9Q8TC1B;Initial Catalog=people;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(constr);
+            SqlCommand command = new SqlCommand($"SELECT deletedAt FROM Patient WHERE Id={id};", connection);
+
+            connection.Open();
+
+            SqlDataReader reader = await command.ExecuteReaderAsync();
+
+            if (reader.HasRows)
+            {
+                PatientModel deletePatient = new PatientModel();
+
+                while (reader.Read())
+                {
+                    deletePatient.deletedAt = patient.deletedAt;
+                }
+                reader.Close();
+                SqlCommand command2 = new SqlCommand($"UPDATE Patient SET deletedAt='{patient.deletedAt}' WHERE Id={id};", connection);
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.UpdateCommand = command2;
+                await adapter.UpdateCommand.ExecuteNonQueryAsync();
+
+                connection.Close();
+                return patient;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+
 
     }
 }

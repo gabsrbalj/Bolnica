@@ -40,5 +40,12 @@ namespace Hospital.Service
             return await updatePatient.UpdatePatientAsync(id, patient);
 
         }
+
+        public async Task<PatientModel> DeletePatientAsync(int id, PatientModel patient)
+        {
+            PatientRepository deletePatient = new PatientRepository();
+            return await deletePatient.DeletePatientAsync(id, patient);
+
+        }
     }
 }
