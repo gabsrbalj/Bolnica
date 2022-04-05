@@ -10,11 +10,19 @@ namespace Hospital.Service
 {
     public class PatientService
     {
-        public async Task<List<PatientModel>> GetAllPatients()
+        public async Task<List<PatientModel>> GetAllPatientsAsync()
         {
 
             PatientRepository patrepo = new PatientRepository();
-            return await patrepo.GetAllPatients();
+            return await patrepo.GetAllPatientsAsync();
+
+        }
+
+        public async Task<List<PatientModel>> GetPatientAsync(int id)
+        {
+
+            PatientRepository patrepo = new PatientRepository();
+            return await patrepo.GetPatientAsync(id);
 
         }
     }

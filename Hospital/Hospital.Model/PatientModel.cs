@@ -8,23 +8,23 @@ namespace Hospital.Model
 {
     public class PatientModel
     {
-        public Guid PatientID { get; set; }
+        public Guid patientID { get; set; }
 
-        public string FirstName { get; set; }
+        public string firstName { get; set; }
 
-        public string LastName { get; set; }
+        public string lastName { get; set; }
 
-        public string Diagnosis { get; set; }
+        public string diagnosis { get; set; }
 
-        public string IdentificationNumber { get; set; }
+        public string identificationNumber { get; set; }
 
-        public string MedicalRecordNumber { get; set; }
+        public string medicalRecordNumber { get; set; }
 
-        public DateTime CreatedAt { get; set; }
+        public DateTime createdAt { get; set; }
 
-        public DateTime UpdatedAt { get; set; }
+        public DateTime updatedAt { get; set; }
 
-        public DateTime DeletedAt { get; set; }
+        public DateTime deletedAt { get; set; }
 
     }
 }

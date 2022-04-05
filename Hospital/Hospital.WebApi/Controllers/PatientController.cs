@@ -21,7 +21,7 @@ namespace Hospital.WebApi.Controllers
         {
             PatientService service = new PatientService();
             
-            patient = await service.GetAllPatients();
+            patient = await service.GetAllPatientsAsync();
 
             if (patient != null)
             {
@@ -33,6 +33,27 @@ namespace Hospital.WebApi.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound, "Patient Not Found");
             }
            
+        }
+
+
+        [HttpGet]
+        [Route("api/getbyid")]
+        public async Task<HttpResponseMessage> GetPatientAsync(int id)
+        {
+            PatientService service = new PatientService();
+
+            patient = await service.GetPatientAsync(id);
+
+            if (patient != null)
+            {
+
+                return Request.CreateResponse(HttpStatusCode.OK, patient);
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Patient Not Found");
+            }
+
         }
 
         // POST: api/Patient
