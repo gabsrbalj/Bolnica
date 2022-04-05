@@ -29,7 +29,7 @@ namespace Hospital.Repository
                     {
 
                         DepartmentModel departmentModel = new DepartmentModel();
-                        departmentModel.DepartmentID = reader.GetInt32(0);
+                        departmentModel.DepartmentID = reader.GetGuid(0);
                         departmentModel.DepartmentName = reader.GetString(1);
                         departmentModel.HospitalFloor = reader.GetInt32(2);
                         departmentModel.TelephoneNumber = reader.GetString(3);

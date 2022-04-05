@@ -4,3 +4,9 @@ C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Model\obj\Debug\Hosp
 C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Model\obj\Debug\Hospital.Model.csproj.CoreCompileInputs.cache
 C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Model\obj\Debug\Hospital.Model.dll
 C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Model\obj\Debug\Hospital.Model.pdb
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Model\bin\Debug\Hospital.Model.dll
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Model\bin\Debug\Hospital.Model.pdb
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Model\obj\Debug\Hospital.Model.csprojAssemblyReference.cache
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Model\obj\Debug\Hospital.Model.csproj.CoreCompileInputs.cache
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Model\obj\Debug\Hospital.Model.dll
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Model\obj\Debug\Hospital.Model.pdb

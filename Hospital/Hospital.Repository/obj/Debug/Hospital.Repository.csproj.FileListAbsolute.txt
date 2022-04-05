@@ -7,3 +7,12 @@ C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Repository\obj\Debug
 C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.csproj.CopyComplete
 C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.dll
 C:\Users\Gabi\Desktop\Hospital - Bootcamp\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.pdb
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\bin\Debug\Hospital.Repository.dll
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\bin\Debug\Hospital.Repository.pdb
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\bin\Debug\Hospital.Model.dll
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\bin\Debug\Hospital.Model.pdb
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.csprojAssemblyReference.cache
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.csproj.CopyComplete
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.dll
+C:\Users\Gabi\Desktop\Novo _ BOLNICA\Hospital\Hospital.Repository\obj\Debug\Hospital.Repository.pdb

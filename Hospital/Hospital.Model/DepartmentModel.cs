@@ -8,7 +8,7 @@ namespace Hospital.Model
 {
     public class DepartmentModel
     {
-        public int DepartmentID { get; set; }
+        public Guid DepartmentID { get; set; }
 
         public string DepartmentName { get; set; }
 
