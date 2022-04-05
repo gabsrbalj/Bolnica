@@ -25,5 +25,12 @@ namespace Hospital.Service
             return await patrepo.GetPatientAsync(id);
 
         }
+
+        public async Task<PatientModel> InsertPatientAsync(PatientModel patient)
+        {
+            PatientRepository insertPatient = new PatientRepository();
+
+            return await insertPatient.PutPatientAsync(patient);
+        }
     }
 }

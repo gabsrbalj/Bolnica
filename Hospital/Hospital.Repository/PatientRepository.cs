@@ -98,6 +98,25 @@ namespace Hospital.Repository
 
 
 
+        public async Task<PatientModel> PutPatientAsync(PatientModel patient)
+        {
+            //string connectionString = "Data Source=DESKTOP-9Q8TC1B;Initial Catalog=people;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(constr);
+            SqlCommand command = new SqlCommand($"INSERT INTO Patient (patientID, firstName, lastName, diagnosis, identificationNumber, medicalRecordNumber, createdAt) VALUES ({patient.patientID}, '{patient.firstName}', '{patient.lastName}','{patient.diagnosis}','{patient.identificationNumber}','{patient.medicalRecordNumber}','{patient.createdAt}');", connection);
+
+
+            connection.Open();
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.InsertCommand = command;
+            await adapter.InsertCommand.ExecuteNonQueryAsync();
+
+            connection.Close();
+            return patient;
+        }
+
+
+
 
 
 

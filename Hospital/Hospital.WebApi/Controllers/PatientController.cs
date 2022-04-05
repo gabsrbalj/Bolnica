@@ -56,9 +56,30 @@ namespace Hospital.WebApi.Controllers
 
         }
 
-        // POST: api/Patient
-        public void Post([FromBody]string value)
-        {
+        
+        [HttpPost]
+        [Route("api/insertPatient")]
+        public async Task<HttpResponseMessage> PostAsync(PatientModel patient)
+        { 
+
+            PatientService service = new PatientService();
+            PatientModel newPatient = new PatientModel();
+
+            newPatient.patientID = Guid.NewGuid();
+            newPatient = await service.InsertPatientAsync(patient);
+
+            PatientModelRest newPatientRest = new PatientModelRest();
+            newPatientRest.patientID = newPatient.patientID;
+            newPatientRest.firstName = newPatient.firstName;
+            newPatientRest.lastName = newPatient.lastName;
+            newPatientRest.diagnosis = newPatient.diagnosis;
+            newPatientRest.identificationNumber = newPatient.identificationNumber;
+            newPatientRest.medicalRecordNumber = newPatient.medicalRecordNumber;
+            newPatientRest.createdAt = newPatient.createdAt;
+           
+
+            return Request.CreateResponse(HttpStatusCode.OK, newPatientRest);
+
         }
 
         // PUT: api/Patient/5
