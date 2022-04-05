@@ -83,9 +83,37 @@ namespace Hospital.WebApi.Controllers
         }
 
         // PUT: api/Patient/5
-        public void Put(int id, [FromBody]string value)
+        public async Task<HttpResponseMessage> PutAsync(int id, PatientModel patient)
         {
+
+            PatientService service = new PatientService();
+            PatientModel update = new PatientModel();
+
+            update = await service.UpdatePatientAsync(id, patient);
+
+            if (update != null)
+            {
+                PatientModelRest newPatient = new PatientModelRest();
+                newPatient.firstName = patient.firstName;
+                newPatient.lastName = patient.lastName;
+                newPatient.diagnosis = patient.diagnosis;
+                newPatient.identificationNumber = patient.identificationNumber;
+                newPatient.medicalRecordNumber = patient.medicalRecordNumber;
+                newPatient.updatedAt = patient.updatedAt;
+
+
+                return Request.CreateResponse(HttpStatusCode.OK,newPatient);
+            }
+
+
+
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Patient does not exist in database.");
+            }
+
         }
+
 
         // DELETE: api/Patient/5
         public void Delete(int id)

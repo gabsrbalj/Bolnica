@@ -117,7 +117,44 @@ namespace Hospital.Repository
 
 
 
+        public async Task<PatientModel> UpdatePatientAsync(int id, PatientModel patient)
+        {
+            //string connectionString = "Data Source=DESKTOP-9Q8TC1B;Initial Catalog=people;Integrated Security=True";
+            SqlConnection connection = new SqlConnection(constr);
+            SqlCommand command = new SqlCommand($"SELECT * FROM Patient WHERE Id={id};", connection);
 
+            connection.Open();
+
+            SqlDataReader reader = await command.ExecuteReaderAsync();
+
+            if (reader.HasRows)
+            {
+                PatientModel updatePatient = new PatientModel();
+
+                while (reader.Read())
+                {
+                    updatePatient.firstName = patient.firstName;
+                    updatePatient.lastName = patient.lastName;
+                    updatePatient.diagnosis = patient.diagnosis;
+                    updatePatient.identificationNumber = patient.identificationNumber;
+                    updatePatient.medicalRecordNumber = patient.medicalRecordNumber;
+                    updatePatient.updatedAt = patient.updatedAt;
+                }
+                reader.Close();
+                SqlCommand command2 = new SqlCommand($"UPDATE Patient SET firstName='{patient.firstName}',lastName='{patient.lastName}', diagnosis='{patient.diagnosis}', identificationNumber='{patient.identificationNumber}',medicalRecordNumber='{patient.medicalRecordNumber}', updatedAt='{patient.updatedAt}' WHERE Id={id};", connection);
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.UpdateCommand = command2;
+                await adapter.UpdateCommand.ExecuteNonQueryAsync();
+
+                connection.Close();
+                return patient;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
 
 
